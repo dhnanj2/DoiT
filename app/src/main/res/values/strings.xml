@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name" style="bold">ToDo</string>
+    <string name="pick_time">edit</string>
+</resources>
