@@ -10,7 +10,7 @@ public class TaskDBHelper extends SQLiteOpenHelper {
     public static final String LOG_TAG = TaskDBHelper.class.getSimpleName();
 
     /** Name of the database file */
-    private static final String DATABASE_NAME = "ToDo.db";
+    private static final String DATABASE_NAME = "todo.db";
 
     /**
      * Database version. If you change the database schema, you must increment the database version.
