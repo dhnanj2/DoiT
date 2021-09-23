@@ -7,19 +7,52 @@
     android:background="@color/primary_dark_color"
     android:orientation="vertical">
 
-<!--    <ListView-->
-<!--        android:id="@+id/list_view"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:orientation="vertical"-->
-<!--        tools:context=".MainActivity">-->
+    <!--List View to populate by {@link list_item}-->
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:layout_margin="8dp"/>
 
-    <TextView
-        android:id="@+id/main_text_view"
+    <!-- Empty view for the list -->
+    <RelativeLayout
+        android:id="@+id/empty_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:textStyle="bold"/>
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/relax_icon"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/relax_icon"/>
+
+        <TextView
+            android:id="@+id/empty_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relax_icon"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="16dp"
+            android:text="@string/empty_view_title_text"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <TextView
+            android:id="@+id/empty_subtitle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empty_title_text"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            android:paddingTop="8dp"
+            android:text="@string/empty_view_subtitle_text"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#A2AAB0"/>
+    </RelativeLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -30,7 +63,5 @@
         android:backgroundTint="@color/primary_color"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"/>
-
-<!--    </ListView>-->
 
 </RelativeLayout>
