@@ -3,4 +3,6 @@
     <string name="pick_time">edit</string>
     <string name="empty_view_title_text">Nothing To Do for now!</string>
     <string name="empty_view_subtitle_text">start by adding some tasks</string>
+    <string name="title_add_task">Add Task</string>
+    <string name="title_edit_task">Edit Task</string>
 </resources>
